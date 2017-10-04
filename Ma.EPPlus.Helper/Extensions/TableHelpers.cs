@@ -76,34 +76,34 @@ namespace Ma.EPPlus.Helper.Extensions
             return package.AddPivotTable(table, groupByColumns, summaryColumns, null, pivotWorksheetName);
         }
 
-        ///// <summary>
-        ///// Add Pivot table according to excel table..
-        ///// </summary>
-        ///// <remarks>
-        ///// Slightly modified version of
-        ///// https://stackoverflow.com/a/13979855/1380428.
-        ///// </remarks>
-        ///// <exception cref="ArgumentNullException">
-        ///// When package or table is null.
-        ///// </exception>
-        ///// <exception cref="ArgumentException">
-        ///// When no group by or summary column has been provided.
-        ///// </exception>
-        ///// <param name="package">Excel package to add pivot table to.</param>
-        ///// <param name="table">Table to add pivot table for.</param>
-        ///// <param name="groupByColumns">Columns to group according to.</param>
-        ///// <param name="summaryColumns">Columns to show summary for.</param>
-        ///// <param name="filterColumns">Columns to add filter for.</param>
-        ///// <returns>Added pivot table.</returns>
-        //public static ExcelPivotTable AddPivotTable(
-        //    this ExcelPackage package,
-        //    ExcelTable table,
-        //    List<string> groupByColumns,
-        //    List<FJSummaryColumn> summaryColumns,
-        //    List<string> filterColumns)
-        //{
-        //    return package.AddPivotTable(table, groupByColumns, summaryColumns, filterColumns, null);
-        //}
+        /// <summary>
+        /// Add Pivot table according to excel table..
+        /// </summary>
+        /// <remarks>
+        /// Slightly modified version of
+        /// https://stackoverflow.com/a/13979855/1380428.
+        /// </remarks>
+        /// <exception cref="ArgumentNullException">
+        /// When package or table is null.
+        /// </exception>
+        /// <exception cref="ArgumentException">
+        /// When no group by or summary column has been provided.
+        /// </exception>
+        /// <param name="package">Excel package to add pivot table to.</param>
+        /// <param name="table">Table to add pivot table for.</param>
+        /// <param name="groupByColumns">Columns to group according to.</param>
+        /// <param name="summaryColumns">Columns to show summary for.</param>
+        /// <param name="filterColumns">Columns to add filter for.</param>
+        /// <returns>Added pivot table.</returns>
+        public static ExcelPivotTable AddPivotTable(
+            this ExcelPackage package,
+            ExcelTable table,
+            List<string> groupByColumns,
+            List<SummaryColumn> summaryColumns,
+            List<string> filterColumns)
+        {
+            return package.AddPivotTable(table, groupByColumns, summaryColumns, filterColumns, null);
+        }
 
         /// <summary>
         /// Add Pivot table according to excel table.

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Ma.EPPlus.Helper</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>MammadovAdil</authors>
+    <owners>MammadovAdil</owners>
+    <licenseUrl>https://github.com/MammadovAdil/EPPlus.Helper/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/MammadovAdil/EPPlus.Helper</projectUrl>
+    <iconUrl>https://cdn0.iconfinder.com/data/icons/logos-brands/24/logo_brand_brands_logos_excel-128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Helper methods to easily work with EPPlus to read and generate Excel documents.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>EPPlus Excel PivotTable</tags>
+
+    <dependencies>
+      <dependency id="EPPlus" version="4.1.0" />
+    </dependencies>
+  </metadata>
+</package>
