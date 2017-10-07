@@ -1,4 +1,4 @@
-﻿#EPPlus.Helper
+﻿# EPPlus.Helper
 
 Helper methods to work with EPPlus.
 
